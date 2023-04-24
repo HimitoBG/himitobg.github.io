@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="pics/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ShapeUpProject</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="navbar-container">
+          <img src="pics/logo.png" width="6%" alt="" />
+          <div id="navbar-links">
+            <ul>
+              <li><a href="#section1">Начало</a></li>
+              <li><a href="#section2">Кои сме ние?</a></li>
+              <li><a href="#section3">Нашите треньори</a></li>
+              <li><a href="#section4">Трансформации</a></li>
+              <li><a href="#section5">Свържи се с нас</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="loginpage.html" id="login_button"> Вход за клиенти</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="section1">
+        <div class="hero-text">
+          <h1>
+            Добре дошъл в <span style="color: #ff1e1e">ShapeUpProject</span>
+          </h1>
+          <p>
+            Твоята перфектна
+            <span style="color: #ff1e1e">фитнес</span> дестинация
+          </p>
+        </div>
+      </section>
+      <section class="about" id="section2">
+        <h2>Трансформирай тялото и ума си</h2>
+        <p>
+          Ние от ShapeUpProject искаме <span style="color: #ff1e1e">ти</span> да
+          достгинеш най-доброто <span style="color: #ff1e1e">аз.</span>
+        </p>
+        <p>За тази цел ние можем да ти предложим:</p>
+        <div class="list">
+          <ul>
+            <li>Тренировъчен план за начинаещи, напреднали и състезатели</li>
+            <li>Персонално изготвени хранителни планове</li>
+            <li>Помощ при избор на хранителни добавки</li>
+            <li>Тренировки с нашите лични треньори</li>
+          </ul>
+        </div>
+        <div>
+          <a id="myBtn"
+            >Присъедини се <span style="color: #ff1e1e">Сега</span></a
+          >
+        </div>
+      </section>
+      <section class="services" id="section3">
+        <h2>Запознай се с нашите треньори</h2>
+        <ul>
+          <li>
+            <img src="pics/cbum.jpg" alt="Петър Друмев" />
+            <h3>Петър Друмев</h3>
+            <p>
+              Завършил Кинезиология в НСА София. Години прекарани в спорта и
+              работа с клиенти
+            </p>
+          </li>
+          <li>
+            <img src="pics/sara.webp" alt="???" />
+            <h3>Сара Димитрова</h3>
+            <p>
+              Специализирала в тренировките с жени от всякакво ниво и с всякакви
+              цели.
+            </p>
+          </li>
+          <li>
+            <img src="pics/ivan" alt="Иван Петров" />
+            <h3>Иван Петров</h3>
+            <p>
+              Състезател по бодибилдинг от 10 години. Притежател на IFBB PRO
+              карта.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="testimonials" id="section4">
+        <h2>Трансформации</h2>
+        <ul>
+          <li>
+            <img src="pics/transf1.jpg" alt="Testimonial" />
+            <blockquote>
+              "ShapeUpProject ми помогнаха да достигна това, което мислих за
+              невъзможно."
+            </blockquote>
+            <cite>- Симеон Заемджиков</cite>
+          </li>
+          <li>
+            <img src="pics/transf2.jpg" alt="Testimonial" />
+            <blockquote>
+              "Работих с ShapeUpProject година и успях да сваля всички тези
+              килограми. Сега се чувствам и изглеждам по-добре от всякога!"
+            </blockquote>
+            <cite>- Анна Петрова</cite>
+          </li>
+        </ul>
+      </section>
+      <section class="contact" id="section5">
+        <div class="contact-container">
+          <h2>Свържи се с нас!</h2>
+          <p>
+            Ти си само на един <span style="color: red">клик</span> от това да
+            направиш първата крачка!
+          </p>
+        </div>
+
+        <ul>
+          <li><a href="#">Тел. за връзка: +359876453890</a></li>
+          <li><a href="#">Email: shapeupproject@gmail.com</a></li>
+        </ul>
+        <a class="button" id="myBtn2"
+          >Присъедини се<span style="color: #ff1e1e"> Сега</span></a
+        >
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="fcf-body">
+              <div id="fcf-form">
+                <h3 class="fcf-h3">Contact us</h3>
+                <form
+                  id="fcf-form-id"
+                  class="fcf-form-class"
+                  method="post"
+                  action="contact-form-process.php"
+                >
+                  <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                      <input
+                        type="text"
+                        id="Name"
+                        name="Name"
+                        class="fcf-form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label"
+                      >Your email address</label
+                    >
+                    <div class="fcf-input-group">
+                      <input
+                        type="email"
+                        id="Email"
+                        name="Email"
+                        class="fcf-form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                      <textarea
+                        id="Message"
+                        name="Message"
+                        class="fcf-form-control"
+                        rows="6"
+                        maxlength="3000"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="fcf-form-group">
+                    <button
+                      type="submit"
+                      id="fcf-button"
+                      class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script>
+  /*scroll navbar*/
+
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-110px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+  /*smooth scroll*/
+  document.querySelectorAll("#navbar a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+      targetEl.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+  /*button?*/
+  const loginButton = document.getElementById("login_button");
+  loginButton.addEventListener("click", () => {
+    window.location.href = "loginpage.html";
+  });
+  /*modal*/
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  var btn2 = document.getElementById("myBtn2");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  btn2.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
